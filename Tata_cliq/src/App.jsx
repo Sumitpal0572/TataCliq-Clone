@@ -6,9 +6,9 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div>
+      {/* <div>
         <h1>Welcome to My Website</h1>
-      </div>
+      </div> */}
     </div>
   );
 }
