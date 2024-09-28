@@ -5,9 +5,9 @@ import "./Navbar.css"; // Import CSS for styling
 
 const Navbar = () => {
   return (
-    <Box className="navbar" p={4} bg="black" color="black">
+    <Box className="navbar" p={4} bg="black" color="black" height="30px">
       <Flex align="center">
-        <Box fontSize="xl" fontWeight="bold" color="white">
+        <Box fontSize="xl" fontWeight="bold" color="white" marginLeft="10px">
           TATA CliQ Luxury
         </Box>
         <Spacer />
@@ -23,9 +23,13 @@ const Navbar = () => {
         <Link className="nav-link" href="/contact">
           Track Orders
         </Link>
-        <Button colorScheme="teal" variant="outline" ml={6}>
+        {/* <Button colorScheme="teal"  ml={6}>
           SignIn / SignUp
-        </Button>
+        </Button> */}
+
+        <Link className="nav-link" href="/contact">
+          SignIn / SignUp
+        </Link>
       </Flex>
     </Box>
   );
