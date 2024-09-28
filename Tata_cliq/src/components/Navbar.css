@@ -1,0 +1,22 @@
+/* src/components/Navbar.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-left: 400px;
+  box-shadow: 0 4px 8px rgba(240, 240, 240, 0.1);
+  width: 70%;
+}
+
+.nav-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(255, 253, 253);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #e2e8f0;
+}
