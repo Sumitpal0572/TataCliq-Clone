@@ -1,4 +1,5 @@
-// src/components/Navbar.jsx
+// // src/components/Navbar.jsx
+
 import React from "react";
 import {
   Box,
@@ -13,11 +14,10 @@ import "./Navbar.css"; // Import CSS for styling
 
 const Navbar = () => {
   return (
-    // navbar base
-
-    <Box className="navbar-base" p={4} bg="gray.700" color="white">
-      <Box className="navbar" p={4} bg="black" color="black" height="30px">
-        <Flex align="center">
+    <Box className="navbar-base" bg="gray.700" color="white" width="100%">
+      {/* Top Section */}
+      <Box className="navbar" p={4} bg="black" color="white">
+        <Flex align="center" justify="space-between">
           <Box
             fontSize="xl"
             fontWeight="bold"
@@ -27,7 +27,6 @@ const Navbar = () => {
           >
             TATA CliQ Luxury
           </Box>
-          <Spacer />
           <Box className="links">
             <Link className="nav-link" href="/CLIQ Cash">
               CLIQ Cash
@@ -48,6 +47,7 @@ const Navbar = () => {
         </Flex>
       </Box>
 
+      {/* Bottom Section with Search */}
       <Flex align="center" maxW="1200px" mx="auto">
         {/* Company Logo */}
         <Box className="logo">
@@ -56,7 +56,6 @@ const Navbar = () => {
           </h1>
         </Box>
 
-        {/* Spacer for alignment */}
         <Spacer />
 
         {/* Dropdown 1 */}
@@ -64,8 +63,8 @@ const Navbar = () => {
           placeholder="Category"
           _placeholder={{ color: "white" }}
           width="150px"
-          marginRight="80px"
-          bg="white"
+          marginRight="20px"
+          bg="gray.600"
           color="white"
           border="none"
           _hover={{ bg: "gray.500" }}
@@ -81,7 +80,7 @@ const Navbar = () => {
           placeholder="Brands"
           _placeholder={{ color: "white" }}
           width="150px"
-          marginRight="80px"
+          marginRight="20px"
           bg="gray.600"
           color="white"
           border="none"
@@ -98,9 +97,9 @@ const Navbar = () => {
           placeholder="Search for Products"
           width="500px"
           bg="grey"
-          color="white"
+          color="grey"
           border="none"
-          _placeholder={{ color: "white" }}
+          _placeholder={{ color: "transparent" }}
           className="search-input"
         />
       </Flex>
