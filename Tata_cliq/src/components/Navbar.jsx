@@ -98,9 +98,9 @@ const Navbar = () => {
           placeholder="Search for Products"
           width="500px"
           bg="grey"
-          color="grey"
+          color="white"
           border="none"
-          _placeholder={{ color: "transparent" }}
+          _placeholder={{ color: "white" }}
           className="search-input"
         />
       </Flex>
