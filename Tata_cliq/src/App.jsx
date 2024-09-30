@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignInSignUpPage from "./pages/SignInSignUpPages";
 import Categories from "./components/Categories";
+import Posters from "./components/Posters";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/SignIn" element={<SignInSignUpPage />} />
         </Routes>
         <Categories />
+        <Posters />
       </div>
     </Router>
   );
