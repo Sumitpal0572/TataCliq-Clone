@@ -10,6 +10,7 @@ import {
   Select,
   Button,
 } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css"; // Import CSS for styling
 
 const Navbar = () => {
@@ -40,9 +41,9 @@ const Navbar = () => {
             <Link className="nav-link" href="/Track Order">
               Track Orders
             </Link>
-            <Link className="nav-link" href="/SignIn">
+            <RouterLink className="nav-link" to="/SignIn">
               SignIn / SignUp
-            </Link>
+            </RouterLink>
           </Box>
         </Flex>
       </Box>
