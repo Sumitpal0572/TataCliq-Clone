@@ -1,8 +1,15 @@
 /* src/components/Cards.css */
+.hero {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 70px;
+}
+
 .cards-container {
   display: flex;
   gap: 20px;
   justify-content: center;
+
   padding: 20px;
 }
 

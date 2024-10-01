@@ -19,63 +19,69 @@ const Cards = () => {
 
     {
       imgSrc: "src/assets/w.jpg",
-      title: "BIBA",
-      offer: "30% - 60% OFF",
-      link: "https://www.biba.in",
+      title: "WESTSIDE",
+      offer: "30% - 70% OFF",
+      link: "https://www.westside.in",
     },
 
     {
       imgSrc: "src/assets/addidas.jpg",
-      title: "BIBA",
-      offer: "30% - 60% OFF",
-      link: "https://www.biba.in",
+      title: "ADDIDAS",
+      offer: "30% - 50% OFF",
+      link: "https://www.addidas.in",
     },
 
     {
       imgSrc: "src/assets/aldo.jpg",
-      title: "BIBA",
-      offer: "30% - 60% OFF",
-      link: "https://www.biba.in",
+      title: "ALDO",
+      offer: "30% - 50% OFF",
+      link: "https://www.aldo.in",
     },
 
     {
       imgSrc: "src/assets/tommy.jpg",
-      title: "BIBA",
+      title: "TOMMY HILIFER",
       offer: "30% - 60% OFF",
-      link: "https://www.biba.in",
+      link: "https://www.tommyhilifer.in",
     },
 
     {
       imgSrc: "src/assets/uspolo.jpg",
-      title: "BIBA",
+      title: "US POLO",
       offer: "30% - 60% OFF",
-      link: "https://www.biba.in",
+      link: "https://www.usp.in",
     },
 
     {
       imgSrc: "src/assets/titan.jpg",
-      title: "BIBA",
+      title: "TITAN",
       offer: "30% - 60% OFF",
-      link: "https://www.biba.in",
+      link: "https://www.titan.in",
     },
   ];
 
   return (
-    <div className="cards-container">
-      {cardData.map((card, index) => (
-        <div
-          className="card"
-          key={index}
-          onClick={() => window.open(card.link, "_blank")}
-        >
-          <img src={card.imgSrc} alt={card.title} className="card-image" />
-          <div className="card-details">
-            <h3>{card.title}</h3>
-            <p>{card.offer}</p>
+    <>
+      <h1 className="hero">BLOCKBUSTER DEALS</h1>
+
+      <hr style={{ color: "red" }} />
+
+      <div className="cards-container">
+        {cardData.map((card, index) => (
+          <div
+            className="card"
+            key={index}
+            onClick={() => window.open(card.link, "_blank")}
+          >
+            <img src={card.imgSrc} alt={card.title} className="card-image" />
+            <div className="card-details">
+              <h3>{card.title}</h3>
+              <p>{card.offer}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 
