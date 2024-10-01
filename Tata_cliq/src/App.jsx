@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignInSignUpPage from "./pages/SignInSignUpPages";
 import Categories from "./components/Categories";
 import Posters from "./components/Posters";
+import Cards from "./components/Card";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </Routes>
         <Categories />
         <Posters />
+        <Cards />
       </div>
     </Router>
   );
