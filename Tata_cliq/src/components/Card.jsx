@@ -18,7 +18,7 @@ const Cards = () => {
     },
 
     {
-      imgSrc: "src/assets/w.jpg",
+      imgSrc: "src/assets/W.jpg",
       title: "WESTSIDE",
       offer: "30% - 70% OFF",
       link: "https://www.westside.in",
@@ -50,6 +50,34 @@ const Cards = () => {
       title: "US POLO",
       offer: "30% - 60% OFF",
       link: "https://www.usp.in",
+    },
+
+    {
+      imgSrc: "src/assets/forevernew.jpg",
+      title: "Forever New",
+      offer: "30% - 60% OFF",
+      link: "https://www.forevernew.in",
+    },
+
+    {
+      imgSrc: "src/assets/levis.jpg",
+      title: "LEVIS",
+      offer: "30% - 60% OFF",
+      link: "https://www.levis.in",
+    },
+
+    {
+      imgSrc: "src/assets/woodland.jpg",
+      title: "WOODLAND",
+      offer: "30% - 60% OFF",
+      link: "https://www.woodland.in",
+    },
+
+    {
+      imgSrc: "src/assets/j&j.jpg",
+      title: "JACK & JONES",
+      offer: "30% - 60% OFF",
+      link: "https://www.jackjones.in",
     },
 
     {
