@@ -7,6 +7,7 @@ import SignInSignUpPage from "./pages/SignInSignUpPages";
 import Categories from "./components/Categories";
 import Posters from "./components/Posters";
 import Cards from "./components/Card";
+import Poster from "./components/poster";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Categories />
         <Posters />
         <Cards />
+        <Poster />
       </div>
     </Router>
   );

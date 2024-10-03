@@ -1,0 +1,16 @@
+.poster-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.poster {
+  width: 300px; /* Adjust as per your image size */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.poster:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
