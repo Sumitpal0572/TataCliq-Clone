@@ -9,7 +9,7 @@ const Poster = () => {
   return (
     <div className="poster-container">
       <img
-        src="src/assets/productdetail.jpg"
+        src="https://blogs.paidkiya.com/wp-content/uploads/2020/11/HDFC.jpg"
         alt="Clickable Poster"
         className="poster"
         onClick={handleClick}

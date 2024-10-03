@@ -8,6 +8,7 @@ import Categories from "./components/Categories";
 import Posters from "./components/Posters";
 import Cards from "./components/Card";
 import Poster from "./components/poster";
+import HeroCard from "./components/HerosCard";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Posters />
         <Cards />
         <Poster />
+        <HeroCard />
       </div>
     </Router>
   );
