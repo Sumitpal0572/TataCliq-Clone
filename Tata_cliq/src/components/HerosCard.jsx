@@ -25,7 +25,7 @@ const HeroCard = () => {
 
     {
       imgSrc:
-        "https://assets.tatacliq.com/medias/sys_master/images/62351069872158.png",
+        "https://assets.tatacliq.com/medias/sys_master/images/62351068168222.png",
     },
 
     {

@@ -6,6 +6,7 @@ import Posters from "../components/Posters";
 import Cards from "../components/Card";
 import Poster from "../components/poster";
 import HeroCard from "../components/HerosCard";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <Cards />
       <Poster />
       <HeroCard />
+      <Footer />
     </div>
   );
 }
