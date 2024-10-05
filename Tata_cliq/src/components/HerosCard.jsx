@@ -7,61 +7,60 @@ const HeroCard = () => {
     {
       imgSrc:
         "https://assets.tatacliq.com/medias/sys_master/images/51889190633502.jpg",
-      offer: "30% - 60% OFF",
     },
     {
-      imgSrc: "src/assets/biba.jpg",
-      offer: "30% - 60% OFF",
-    },
-
-    {
-      imgSrc: "src/assets/W.jpg",
-      offer: "30% - 70% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62351067381790.png",
     },
 
     {
-      imgSrc: "src/assets/addidas.jpg",
-      offer: "30% - 50% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62351067643934.png",
     },
 
     {
-      imgSrc: "src/assets/aldo.jpg",
-      offer: "30% - 50% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62351069872158.png",
     },
 
     {
-      imgSrc: "src/assets/tommy.jpg",
-      offer: "30% - 60% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62351069872158.png",
     },
 
     {
-      imgSrc: "src/assets/uspolo.jpg",
-      offer: "30% - 60% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62351068463134.png",
     },
 
     {
-      imgSrc: "src/assets/forevernew.jpg",
-      offer: "30% - 60% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62351070560286.png",
     },
 
     {
-      imgSrc: "src/assets/levis.jpg",
-      offer: "30% - 60% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62351070494750.png",
     },
 
     {
-      imgSrc: "src/assets/woodland.jpg",
-      offer: "30% - 60% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62351068233758.png",
     },
 
     {
-      imgSrc: "src/assets/j&j.jpg",
-      offer: "30% - 60% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62356603207710.png",
     },
 
     {
-      imgSrc: "src/assets/titan.jpg",
-      offer: "30% - 60% OFF",
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62356603338782.png",
+    },
+
+    {
+      imgSrc:
+        "https://assets.tatacliq.com/medias/sys_master/images/62356603142174.png",
     },
   ];
 
