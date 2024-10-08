@@ -39,4 +39,4 @@ A Chakra UI-designed footer that provides additional navigation options and info
 #### CSS: Custom styling for certain components and page layout.
 
 
- [Click here to view the deployed project link](tata-cliq-clone-eight.vercel.app)
+ [Click here to view the deployed project link](https://tata-cliq-clone-n7d4.vercel.app/)
