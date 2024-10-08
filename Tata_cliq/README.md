@@ -1,4 +1,4 @@
-# TataCliq Clone
+<!-- # TataCliq Clone
 
 ##### This project is a frontend clone of the TataCliq e-commerce website built using React and Chakra UI. The app includes features like user authentication (Sign In/Sign Up), a dynamic shopping page with category filters, and a responsive layout.
 
@@ -36,4 +36,4 @@ A Chakra UI-designed footer that provides additional navigation options and info
 
 #### JavaScript: For adding functionality like filtering products and managing user authentication.
 
-#### CSS: Custom styling for certain components and page layout.
+#### CSS: Custom styling for certain components and page layout. -->
