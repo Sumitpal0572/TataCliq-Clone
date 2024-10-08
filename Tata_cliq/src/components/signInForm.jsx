@@ -1,16 +1,25 @@
- 
 import React, { useState } from "react";
-import { Box, Input, Button, Text, useToast } from "@chakra-ui/react";
+import {
+  Box,
+  Input,
+  Button,
+  Text,
+  useToast,
+  Alert,
+  AlertIcon,
+} from "@chakra-ui/react";
 
 const SignInSignUpForm = () => {
   const [isSignIn, setIsSignIn] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+  const [alertMessage, setAlertMessage] = useState(null); // For inline alert messages
   const toast = useToast();
 
   const handleSignIn = () => {
-    if (email && password) {
+    if (email.trim() && password.trim()) {
+      setAlertMessage(`Hello, ${email}`);
       toast({
         title: `Hello, ${email}`,
         status: "success",
@@ -18,6 +27,7 @@ const SignInSignUpForm = () => {
         isClosable: true,
       });
     } else {
+      setAlertMessage("Please fill in all fields");
       toast({
         title: "Please fill in all fields",
         status: "error",
@@ -28,7 +38,8 @@ const SignInSignUpForm = () => {
   };
 
   const handleSignUp = () => {
-    if (username && email && password) {
+    if (username.trim() && email.trim() && password.trim()) {
+      setAlertMessage(`Welcome, ${username}! Your account has been created.`);
       toast({
         title: `Welcome, ${username}! Your account has been created.`,
         status: "success",
@@ -36,6 +47,7 @@ const SignInSignUpForm = () => {
         isClosable: true,
       });
     } else {
+      setAlertMessage("Please fill in all fields");
       toast({
         title: "Please fill in all fields",
         status: "error",
@@ -48,7 +60,7 @@ const SignInSignUpForm = () => {
   return (
     <Box
       minHeight="100vh"
-      bg="blue.500"
+      bg="black"
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -56,7 +68,7 @@ const SignInSignUpForm = () => {
       <Box
         width="400px"
         p={6}
-        bg="gray.700"
+        bg="aqua"
         color="white"
         borderRadius="8px"
         boxShadow="lg"
@@ -64,6 +76,13 @@ const SignInSignUpForm = () => {
         <Text fontSize="2xl" fontWeight="bold" textAlign="center" mb={4}>
           {isSignIn ? "Sign In" : "Sign Up"}
         </Text>
+
+        {alertMessage && (
+          <Alert status="success" mb={4} borderRadius="md">
+            <AlertIcon />
+            {alertMessage}
+          </Alert>
+        )}
 
         {!isSignIn && (
           <Input

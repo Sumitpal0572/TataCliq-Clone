@@ -1,5 +1,6 @@
+
 import React, { useState } from "react";
-import "./ProductsPage.css";
+import { Box, Button, Input, Text, VStack, SimpleGrid } from "@chakra-ui/react";
 
 const products = [
   { id: 1, name: "Men T-shirt", category: "men" },
@@ -25,26 +26,50 @@ const ProductsPage = () => {
   );
 
   return (
-    <div className="products-container">
-      <h2>Shopping Products</h2>
-      <input
-        type="text"
-        placeholder="Search for men, women, or kids"
-        onChange={handleInputChange}
-        className="search-input"
-      />
-      <div className="products-list">
-        {filteredProducts.length > 0 ? (
-          filteredProducts.map((product) => (
-            <div key={product.id} className="product-item">
-              {product.name}
-            </div>
-          ))
-        ) : (
-          <p>No products found for "{searchTerm}"</p>
-        )}
-      </div>
-    </div>
+    <Box p={5} bg="gray.50" minH="100vh">
+      <VStack spacing={5}>
+        <Text fontSize="2xl" fontWeight="bold" color="teal.600">
+          Shopping Products
+        </Text>
+        <Input
+          placeholder="Search for men, women, or kids"
+          onChange={handleInputChange}
+          bg="white"
+          border="1px solid"
+          borderColor="teal.300"
+          _hover={{ borderColor: "teal.500" }}
+          size="lg"
+        />
+        <SimpleGrid columns={[1, 2, 3]} spacing={5} w="full">
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <Box
+                key={product.id}
+                p={5}
+                bg="white"
+                shadow="md"
+                borderRadius="md"
+                borderWidth="1px"
+                textAlign="center"
+              >
+                <Text fontSize="lg" mb={3}>
+                  {product.name}
+                </Text>
+                <Button
+                  colorScheme="teal"
+                  variant="solid"
+                  _hover={{ bg: "teal.600", color: "white" }}
+                >
+                  View Product
+                </Button>
+              </Box>
+            ))
+          ) : (
+            <Text>No products found for "{searchTerm}"</Text>
+          )}
+        </SimpleGrid>
+      </VStack>
+    </Box>
   );
 };
 
